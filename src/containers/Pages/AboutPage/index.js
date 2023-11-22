@@ -84,7 +84,7 @@ const AboutPage = () => {
       <About
         className="aboutArea aboutAreaStyleTwo"
         title="Niyə biz"
-        subTitle="Hakkımızda"
+        subTitle="Haqqımızda"
         images={about}
         orderLast="order-last"
         videoId="XxVg_s8xAms"

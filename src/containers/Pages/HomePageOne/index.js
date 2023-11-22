@@ -122,14 +122,14 @@ const HomePageOne = () => {
       <Service className="serviceArea" />
       <About
         className="aboutArea"
-        title="Hakkımızda"
+        title="Haqqımızda"
         images={about}
         signature={signature}
         pragraphs={aboutText}
       />
       <About_2
         className="aboutArea"
-        title="Hakkımızda"
+        title="Haqqımızda"
         images={about_2}
         signature={signature}
         pragraphs={aboutText2}

@@ -6,12 +6,12 @@ import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
 import BannerSidebar from "../../../components/BannerSidebar";
-import CorporativeContentArea from "../../../components/CorporativeContentArea";
+import EtrafContentArea from "../../../components/EtrafContentArea";
 
 // images
 import breadcumb from "../../../images/breadcumb/1.jpeg";
 import banner from "../../../images/practice/2.jpg";
-import single from "../../../images/practice/corp.jpeg";
+import single from "../../../images/practice/env.jpeg";
 
 import "./style.scss";
 
@@ -21,7 +21,7 @@ const breadcumbMenu = [
   { name: "Practice area details" },
 ];
 
-const PracticeLaw = () => {
+const PracticeEtraf = () => {
   return (
     <Fragment>
       <header className="headerArea">
@@ -44,7 +44,7 @@ const PracticeLaw = () => {
               </aside>
             </div>
             <div className="col-lg-8">
-              <CorporativeContentArea
+              <EtrafContentArea
                 className="singleContentArea"
                 image={single}
                 avatar={true}
@@ -58,4 +58,4 @@ const PracticeLaw = () => {
     </Fragment>
   );
 };
-export default PracticeLaw;
+export default PracticeEtraf;

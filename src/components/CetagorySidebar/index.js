@@ -10,13 +10,18 @@ const cetagoryMenu = [
   },
   { name: "Tikinti və daşınmaz əmlak", route: "/practice-details/tikinti" },
   { name: "Korporativ hüquq", route: "/practice-details/law" },
-  { name: "Vergilər", route: "vergiler" },
-  { name: "Əmək münasibətləri", route: "emek" },
-  { name: "Sığorta", route: "sıgorta" },
-  { name: "Telekommunikasiya", route: "telekomunikasiya" },
-  { name: "Mübahisələrin məhkəməyəqədər həlli", route: "mmh" },
-  { name: "Ətraaf mühitin qorunması", route: "emq" },
-  { name: "Fərdi müştərilər", route: "ferdi" },
+  { name: "Vergilər", route: "/practice-details/vergi" },
+  { name: "Əmək münasibətləri", route: "/practice-details/emek" },
+  { name: "Sığorta", route: "/practice-details/sigorta" },
+  { name: "Telekommunikasiya", route: "/practice-details/tele" },
+  { name: "Ticarət və Nəqliyyat", route: "/practice-details/tvn" },
+  {
+    name: "Mübahisələrin məhkəməyəqədər həlli",
+    route: "/practice-details/mmh",
+  },
+  { name: "Ətraaf mühitin qorunması", route: "/practice-details/emq" },
+  { name: "Əqli mülkiyyət", route: "/practice-details/mulkiyyet" },
+  { name: "Fərdi müştərilər", route: "/practice-details/ferdi" },
 ];
 
 const CetagorySidebar = ({ className, title }) => {

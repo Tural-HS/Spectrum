@@ -19,6 +19,14 @@ import BlogFullWidth from "../Pages/BlogFullWidth";
 import "./App.css";
 import PracticeTikinti from "../Pages/PracticeTikinti";
 import PracticeLaw from "../Pages/PracticeLaw";
+import PracticeVergi from "../Pages/PracticeVergi";
+import PracticeEmek from "../Pages/PracticeEmek";
+import PracticeSigorta from "../Pages/PracticeSigorta";
+import PracticeTele from "../Pages/PracticeTele";
+import PracticeMehkeme from "../Pages/PracticeMehkeme";
+import PracticeTicaret from "../Pages/PracticeTIcaret";
+import PracticeEtraf from "../Pages/PracticeEtraf";
+import PracticeMulkiyyet from "../Pages/PracticeMulkiyyet";
 
 class App extends Component {
   render() {
@@ -58,6 +66,47 @@ class App extends Component {
               path="practice-details/law"
               element={<PracticeLaw />}
             />
+            <Route
+              exact
+              path="practice-details/vergi"
+              element={<PracticeVergi />}
+            />
+            <Route
+              exact
+              path="practice-details/emek"
+              element={<PracticeEmek />}
+            />
+            <Route
+              exact
+              path="practice-details/sigorta"
+              element={<PracticeSigorta />}
+            />
+            <Route
+              exact
+              path="practice-details/tele"
+              element={<PracticeTele />}
+            />
+            <Route
+              exact
+              path="practice-details/mmh"
+              element={<PracticeMehkeme />}
+            />
+            <Route
+              exact
+              path="practice-details/tvn"
+              element={<PracticeTicaret />}
+            />
+            <Route
+              exact
+              path="practice-details/emq"
+              element={<PracticeEtraf />}
+            />
+            <Route
+              exact
+              path="practice-details/mulkiyyet"
+              element={<PracticeMulkiyyet />}
+            />
+
             <Route exact path="attorneys" element={<TeamPage />} />
             <Route exact path="attorneys-single" element={<SingleTeamPage />} />
             <Route exact path="contact" element={<ContactPage />} />
