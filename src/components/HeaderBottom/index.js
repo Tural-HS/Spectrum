@@ -2,6 +2,9 @@ import React, { useState, Fragment } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../../images/logo/logo.png";
 import "./style.scss";
+import azeflag from "../../images/languages/aze2.png";
+import ruflag from "../../images/languages/rus.png";
+import trflag from "../../images/languages/tr.png";
 
 const HeaderBottom = (props) => {
   const [search, setSearch] = useState();
@@ -17,6 +20,34 @@ const HeaderBottom = (props) => {
   const responsiveHandler = () => {
     setResponsive(!responsive);
   };
+  const options = [
+    {
+      value: "aze",
+      label: <img src={azeflag} width="20" alt="" />,
+    },
+    {
+      value: "tr",
+      label: <img src={trflag} width="20" alt="" />,
+    },
+    {
+      value: "ru",
+      label: <img src={ruflag} width="20" alt="" />,
+    },
+  ];
+
+  const [lang, setLang] = useState("en");
+  const [langLabel, setLangLabel] = useState(options[0].label);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  function handleDropdownClick() {
+    setDropdownVisible(!dropdownVisible);
+  }
+
+  function handleItemClick(value, label) {
+    setLang(value);
+    setLangLabel(label);
+    setDropdownVisible(false);
+  }
   return (
     <div className={props.className}>
       <div className="container">
@@ -39,9 +70,9 @@ const HeaderBottom = (props) => {
               <ul className="mainMenuWrap">
                 <li>
                   <NavLink exact to="/">
-                    Home
+                    Əsas səhifə
                   </NavLink>
-                  <ul className="subMenu">
+                  {/* <ul className="subMenu">
                     <li>
                       <NavLink exact to="/">
                         Home One
@@ -57,18 +88,18 @@ const HeaderBottom = (props) => {
                         Home Three
                       </NavLink>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
                 <li>
                   <NavLink exact to="/about">
-                    About
+                    Haqqında
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink exact to="/practice">
-                    Practice
+                  <NavLink exact to="/practice-details">
+                    FƏALİYYƏT SAHƏLƏRİ
                   </NavLink>
-                  <ul className="subMenu">
+                  {/* <ul className="subMenu">
                     <li>
                       <NavLink exact to="/practice">
                         Practice areas
@@ -79,10 +110,10 @@ const HeaderBottom = (props) => {
                         Practice areas single
                       </NavLink>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
 
-                <li>
+                {/* <li>
                   <NavLink exact to="/case-stadies">
                     Cases
                   </NavLink>
@@ -98,8 +129,8 @@ const HeaderBottom = (props) => {
                       </NavLink>
                     </li>
                   </ul>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <NavLink exact to="/blog-left">
                     News
                   </NavLink>
@@ -120,8 +151,8 @@ const HeaderBottom = (props) => {
                       </NavLink>
                     </li>
                   </ul>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <NavLink exact to="/attorneys">
                     Attorneys
                   </NavLink>
@@ -137,10 +168,10 @@ const HeaderBottom = (props) => {
                       </NavLink>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li>
                   <NavLink exact to="/contact">
-                    Contact
+                    Əlaqə
                   </NavLink>
                 </li>
               </ul>
@@ -148,7 +179,7 @@ const HeaderBottom = (props) => {
             <div className="col-lg-1 col-md-2 col-sm-6 col-4">
               <div className="searchMenuWrapper">
                 <div className="searchWrap">
-                  <i onClick={clickHandler} className="fa fa-search"></i>
+                  {/* <i onClick={clickHandler} className="fa fa-search"></i>
                   <div className={trigger ? "searchform active" : "searchform"}>
                     <form onSubmit={submitHandler}>
                       <input
@@ -161,6 +192,31 @@ const HeaderBottom = (props) => {
                         <i className="fa fa-search"></i>
                       </button>
                     </form>
+                  </div> */}{" "}
+                  <div className="App">
+                    <div className="custom-dropdown">
+                      <button
+                        className="dropdown-toggle"
+                        onClick={handleDropdownClick}
+                      >
+                        {langLabel}
+                      </button>
+                      {dropdownVisible && (
+                        <div className="dropdown-menu">
+                          {options.map((option, index) => (
+                            <div
+                              key={index}
+                              className="dropdown-item"
+                              onClick={() =>
+                                handleItemClick(option.value, option.label)
+                              }
+                            >
+                              {option.value}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
                 <div onClick={responsiveHandler} className="responsiveTrigger">

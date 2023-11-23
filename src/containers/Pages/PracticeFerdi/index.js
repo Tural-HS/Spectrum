@@ -6,22 +6,22 @@ import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
 import BannerSidebar from "../../../components/BannerSidebar";
-import TicaretContentArea from "../../../components/TicaretContentArea";
+import FerdiContentArea from "../../../components/FerdiContentArea";
 
 // images
 import breadcumb from "../../../images/breadcumb/1.jpeg";
 import banner from "../../../images/practice/2.jpg";
-import single from "../../../images/practice/trade.png";
+import single from "../../../images/practice/ferdi.webp";
 
 import "./style.scss";
 
 const breadcumbMenu = [
   { name: "Əsas Səhifə", route: "/" },
-  { name: "Fəaliyyətlər", route: "/practice-details" },
-  { name: "Ticarət və Nəqliyyat" },
+  { name: "Fəaliyyət Sahələri", route: "/practice-details" },
+  { name: "Fərdi müştərilər" },
 ];
 
-const PracticeTicaret = () => {
+const PracticeFerdi = () => {
   return (
     <Fragment>
       <header className="headerArea">
@@ -30,7 +30,7 @@ const PracticeTicaret = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Ticarət və Nəqliyyat"
+        title="Fərdi müştərilər"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />
@@ -44,7 +44,7 @@ const PracticeTicaret = () => {
               </aside>
             </div>
             <div className="col-lg-8">
-              <TicaretContentArea
+              <FerdiContentArea
                 className="singleContentArea"
                 image={single}
                 avatar={true}
@@ -58,4 +58,4 @@ const PracticeTicaret = () => {
     </Fragment>
   );
 };
-export default PracticeTicaret;
+export default PracticeFerdi;

@@ -16,9 +16,9 @@ import single from "../../../images/practice/mulk.png";
 import "./style.scss";
 
 const breadcumbMenu = [
-  { name: "Home", route: "/" },
-  { name: "Practice", route: "/practice" },
-  { name: "Practice area details" },
+  { name: "Əsas Səifə", route: "/" },
+  { name: "Fəaliyyət Sahələri", route: "/practice-details" },
+  { name: "Əqli mülkiyyət" },
 ];
 
 const PracticeMulkiyyet = () => {
@@ -30,7 +30,7 @@ const PracticeMulkiyyet = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Practice Single Area"
+        title="Əqli mülkiyyət"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />

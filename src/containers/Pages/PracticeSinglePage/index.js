@@ -16,9 +16,9 @@ import single from "../../../images/practice/3.jpeg";
 import "./style.scss";
 
 const breadcumbMenu = [
-  { name: "Home", route: "/" },
-  { name: "Practice", route: "/practice" },
-  { name: "Practice area details" },
+  { name: "Əsas Səhifə", route: "/" },
+  { name: "Fəaliyyət Sahələri", route: "/practice-details" },
+  { name: "Təbii Ehtiyatlar  Neft və Qaz" },
 ];
 
 const PracticeSinglePage = () => {
@@ -30,7 +30,7 @@ const PracticeSinglePage = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Practice Single Area"
+        title="Təbii Ehtiyatlar  Neft və Qaz"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />

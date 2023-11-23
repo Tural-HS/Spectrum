@@ -16,9 +16,9 @@ import single from "../../../images/practice/tele.jpeg";
 import "./style.scss";
 
 const breadcumbMenu = [
-  { name: "Home", route: "/" },
-  { name: "Practice", route: "/practice" },
-  { name: "Practice area details" },
+  { name: "Əsas Səhifə", route: "/" },
+  { name: "Fəaliyyət Sahələri", route: "/practice-details" },
+  { name: "Telekommunikasiya" },
 ];
 
 const PracticeTele = () => {
@@ -30,7 +30,7 @@ const PracticeTele = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Practice Single Area"
+        title="Telekommunikasiya"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />

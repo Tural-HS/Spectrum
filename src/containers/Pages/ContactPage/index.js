@@ -10,7 +10,7 @@ import breadcumb from "../../../images/breadcumb/1.jpeg";
 
 import "./style.scss";
 
-const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Contact" }];
+const breadcumbMenu = [{ name: "Əsas Səhifə", route: "/" }, { name: "Ələqə" }];
 
 const ContactPage = () => {
   return (
@@ -21,7 +21,7 @@ const ContactPage = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Contact"
+        title="Əlaqə"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />

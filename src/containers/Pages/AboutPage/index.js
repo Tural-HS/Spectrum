@@ -65,7 +65,10 @@ const services = [
   },
 ];
 
-const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "About us" }];
+const breadcumbMenu = [
+  { name: "Əsas Səhifə", route: "/" },
+  { name: "Haqqında" },
+];
 
 const AboutPage = () => {
   return (
@@ -76,7 +79,7 @@ const AboutPage = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="About Us"
+        title="Haqqında"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />

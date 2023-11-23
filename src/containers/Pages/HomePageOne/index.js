@@ -46,16 +46,19 @@ const aboutText2 = [
 const heroSliders = [
   {
     images: "slideWrapperOne",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Frim",
+    // title: "",
+    subTitle:
+      "HÜQUQİ XİDMƏTLƏRİN TAM SPEKTRİ VƏ MÜŞKÜL VƏ PROBLEMLƏRİN EFFEKTIV HƏLLİ",
+
+    text: " SPEKTRUM QSC",
     button: "Contact us now",
   },
   {
     images: "slideWrapperTwo",
-    title: "We Fight For Your Justice",
-    subTitle: "As Like A Friend.",
-    text: "The Most Talented Law Frim",
+    // title: "",
+    subTitle:
+      "HÜQUQİ XİDMƏTLƏRİN TAM SPEKTRİ VƏ MÜŞKÜL VƏ PROBLEMLƏRİN EFFEKTIV HƏLLİ",
+    text: " SPEKTRUM QSC",
     button: "Contact us now",
   },
 ];
@@ -146,22 +149,22 @@ const HomePageOne = () => {
         subTitle="Here Our Best Work"
         portfolioItem={portfolioItem}
       />
-      <Testmonial className="testmonialArea" />
-      <ContactArea className="contactArea" />
-      <TeamMember
+      {/* <Testmonial className="testmonialArea" /> */}
+      {/* <ContactArea className="contactArea" /> */}
+      {/* <TeamMember
         title="Qualified Attorneys "
         subTitle="Meet Our Experts"
         className="teamArea"
         slider={true}
-      />
-      <CounterArea className="counterArea" />
-      <BlogArea
+      /> */}
+      {/* <CounterArea className="counterArea" /> */}
+      {/* <BlogArea
         className="blogArea"
         title="Latest News"
         subTitle="From Our Blog
                 "
-      />
-      <NewsLetter className="newsLetterArea" />
+      /> */}
+      {/* <NewsLetter className="newsLetterArea" /> */}
       <FooterArea />
     </Fragment>
   );

@@ -29,7 +29,7 @@ const TicaretContentArea = ({ className, avatar, image }) => {
         <img src={image} alt="" />
       </div>
       <div className="singleContentWrap">
-        <h3>Ticarət və Nəqliyyatk</h3>
+        <h3>Ticarət və Nəqliyyat</h3>
         <h5>
           Şirkətin təcrübəsi inzibati hüquq münasibətləri, müflisləşmə, məhkəmə
           prosesləri, ətraf mühitin qorunması, əmək və korporativ hüquq

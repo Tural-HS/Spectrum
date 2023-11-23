@@ -27,6 +27,7 @@ import PracticeMehkeme from "../Pages/PracticeMehkeme";
 import PracticeTicaret from "../Pages/PracticeTIcaret";
 import PracticeEtraf from "../Pages/PracticeEtraf";
 import PracticeMulkiyyet from "../Pages/PracticeMulkiyyet";
+import PracticeFerdi from "../Pages/PracticeFerdi";
 
 class App extends Component {
   render() {
@@ -105,6 +106,11 @@ class App extends Component {
               exact
               path="practice-details/mulkiyyet"
               element={<PracticeMulkiyyet />}
+            />
+            <Route
+              exact
+              path="practice-details/ferdi"
+              element={<PracticeFerdi />}
             />
 
             <Route exact path="attorneys" element={<TeamPage />} />
