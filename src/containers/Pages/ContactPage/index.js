@@ -37,11 +37,14 @@ const ContactPage = () => {
                   text. It has roots in a piece of classical Latin literature
                   from 45 BC, making it over 2000 years old.
                 </p>
-                <h4>Address</h4>
-                <span>245 King Street, Touterie Victoria 8520 Australia</span>
-                <h4>Phone</h4>
-                <span>0-123-456-7890</span>
-                <span>0-123-456-7890</span>
+                <h4>Ünvan</h4>
+                <span>
+                  {" "}
+                  Bakı, Xətai r-nu, AZ1025, İzzət Orucova küç., 16/22
+                </span>
+                <h4>Əlaqə nömrəsi</h4>
+                <span> +994 50 283 82 02</span>
+                {/* <span>0-123-456-7890</span> */}
                 <h4>Email</h4>
                 <span>sample@gmail.com</span>
               </div>

@@ -9,18 +9,35 @@
         @media (max-width:768px) {
             height: 450px;
         }
-        &.slideWrapperOne{
-            background: url(../../images/slider/slide-4.jpg)no-repeat center center / cover;
+        
+        &.slideWrapperOne {
+            background: url(../../images/slider/slide-4.jpg) no-repeat center center / cover;
         }
-        &.slideWrapperTwo{
-            background: url(../../images/slider/slide-5.jpeg)no-repeat center center / cover;
+        
+        &.slideWrapperTwo {
+            background: url(../../images/slider/slide-5.jpg) no-repeat center center / cover;
         }
-        &.slideWrapperThree{
-            background: url(../../images/slider/slide-22.jpg)no-repeat center center / cover;
+        
+        &.slideWrapperThree {
+            background: url(../../images/slider/slide-22.jpg) no-repeat center center / cover;
         }
-        &.slideWrapperFour{
-            background: url(../../images/slider/slide-1.jpg)no-repeat center center / cover;
+        
+        &.slideWrapperFour {
+            background: url(../../images/slider/slide-1.jpg) no-repeat center center / cover;
         }
+        
+        /* Add blur effect */
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            filter: blur(10px); /* Adjust the blur value as needed */
+        }
+        
         .sliderContent{
             position: absolute;
             left: 0;

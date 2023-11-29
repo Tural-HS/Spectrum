@@ -143,12 +143,12 @@ const HomePageOne = () => {
         subTitle="Area Of Practice"
         services={services}
       />
-      <Portfolio
+      {/* <Portfolio
         className="portfolioArea"
         title="Our Resent Case Studies"
         subTitle="Here Our Best Work"
         portfolioItem={portfolioItem}
-      />
+      /> */}
       {/* <Testmonial className="testmonialArea" /> */}
       {/* <ContactArea className="contactArea" /> */}
       {/* <TeamMember

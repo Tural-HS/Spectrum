@@ -38,9 +38,9 @@ const MehkemeContentArea = ({ className, avatar, image }) => {
         {avatar && (
           <div className="avatarWra">
             <div className="row">
-              <div className="col-md-4">
+              {/* <div className="col-md-4">
                 <img src={avatarImg} alt="" />
-              </div>
+              </div> */}
               <div className="col-md-8">
                 <h4>
                   Aşağıdakı sahələrdə ekspert biliklər və müvafiq təcrübə
