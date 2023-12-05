@@ -59,7 +59,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <NewsLetter className="newsLetterArea" />
+      {/* <NewsLetter className="newsLetterArea" /> */}
       <FooterArea />
     </Fragment>
   );

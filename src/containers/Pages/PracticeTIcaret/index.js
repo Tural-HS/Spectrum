@@ -53,7 +53,7 @@ const PracticeTicaret = () => {
           </div>
         </div>
       </div>
-      <NewsLetter className="newsLetterArea" />
+      {/* <NewsLetter className="newsLetterArea" /> */}
       <FooterArea />
     </Fragment>
   );

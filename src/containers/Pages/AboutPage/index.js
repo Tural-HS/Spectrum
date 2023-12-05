@@ -93,7 +93,7 @@ const AboutPage = () => {
         videoId="XxVg_s8xAms"
         pragraphs={aboutText}
       />
-      <ServiceArea
+      {/* <ServiceArea
         className="ourServiceArea ourServiceAreaStyleTwo"
         title="How Can We Help You"
         subTitle="Area Of Practice"
@@ -103,8 +103,8 @@ const AboutPage = () => {
       <CounterArea
         fullWidth={true}
         className="counterArea counterAreaStyleTwo"
-      />
-      <TeamMember
+      /> */}
+      {/* <TeamMember
         title="Qualified Attorneys "
         subTitle="Meet Our Experts"
         className="teamArea"
@@ -115,8 +115,8 @@ const AboutPage = () => {
         title="Latest News"
         subTitle="From Our Blog
                 "
-      />
-      <NewsLetter className="newsLetterArea" />
+      /> */}
+      {/* <NewsLetter className="newsLetterArea" /> */}
       <FooterArea />
     </Fragment>
   );
