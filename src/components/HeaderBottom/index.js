@@ -26,7 +26,7 @@ const HeaderBottom = (props) => {
       label: <img src={azeflag} width="20" alt="" />,
     },
     {
-      value: "tr",
+      value: "eng",
       label: <img src={trflag} width="20" alt="" />,
     },
     {
@@ -92,7 +92,7 @@ const HeaderBottom = (props) => {
                 </li>
                 <li>
                   <NavLink exact to="/about">
-                    Haqqında
+                    Haqqımızda
                   </NavLink>
                 </li>
                 <li>

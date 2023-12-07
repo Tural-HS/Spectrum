@@ -47,8 +47,7 @@ const heroSliders = [
   {
     images: "slideWrapperOne",
     // title: "",
-    subTitle:
-      "HÜQUQİ XİDMƏTLƏRİN TAM SPEKTRİ VƏ MÜŞKÜL VƏ PROBLEMLƏRİN EFFEKTIV HƏLLİ",
+    subTitle: "HÜQUQİ XİDMƏTLƏRİN TAM SPEKTRİ",
 
     text: " SPEKTRUM QSC",
     button: "Contact us now",
@@ -56,8 +55,7 @@ const heroSliders = [
   {
     images: "slideWrapperTwo",
     // title: "",
-    subTitle:
-      "HÜQUQİ XİDMƏTLƏRİN TAM SPEKTRİ VƏ MÜŞKÜL VƏ PROBLEMLƏRİN EFFEKTIV HƏLLİ",
+    subTitle: "MÜŞKÜL PROBLEMLƏRİN EFFEKTIV HƏLLİ",
     text: " SPEKTRUM QSC",
     button: "Contact us now",
   },
@@ -118,7 +116,7 @@ const HomePageOne = () => {
   return (
     <Fragment>
       <header className="headerArea">
-        <HeaderTop className="headerTop" />
+        {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea" />
       </header>
       <HeroSlider sliders={heroSliders} className="heroSliderArea" />

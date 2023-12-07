@@ -25,7 +25,7 @@ const PracticeEmek = () => {
   return (
     <Fragment>
       <header className="headerArea">
-        <HeaderTop className="headerTop" />
+        {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>
       <Breadcumb
@@ -40,7 +40,10 @@ const PracticeEmek = () => {
             <div className="col-lg-4">
               <aside className=" pr25">
                 {/* <BannerSidebar image={banner} className="bannerWrapper" /> */}
-                <CetagorySidebar title="Category" className="cetagoryWrap" />
+                <CetagorySidebar
+                  title="Fəaliyyət sahələri"
+                  className="cetagoryWrap"
+                />
               </aside>
             </div>
             <div className="col-lg-8">

@@ -67,19 +67,19 @@ const services = [
 
 const breadcumbMenu = [
   { name: "Əsas Səhifə", route: "/" },
-  { name: "Haqqında" },
+  { name: "Haqqımızda" },
 ];
 
 const AboutPage = () => {
   return (
     <Fragment>
       <header className="headerArea">
-        <HeaderTop className="headerTop" />
+        {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Haqqında"
+        title="Haqqımızda"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />

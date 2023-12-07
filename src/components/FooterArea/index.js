@@ -28,7 +28,7 @@ const footerLinks = [
     menus: [
       { name: " Bakı, Xətai r-nu, AZ1025, İzzət Orucova küç., 16/22" },
       { name: "Azərbaycan" },
-      { name: "Əlaqə nömrəsi:" },
+      { name: "Əlaqə nömrəsi: +994 50 283 82 02" },
       { name: "Email: info@example.com" },
     ],
   },
